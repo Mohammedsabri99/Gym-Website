@@ -1,0 +1,289 @@
+#home {
+    margin-bottom: 180px;
+
+    @include xs {margin-bottom: 50px;}
+    @include sm {margin-bottom: 60px;}
+    @include md {margin-bottom: 70px;}
+    
+    .bd-example {
+
+        .toggle {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $white-color;
+            z-index: 9998;
+            cursor: pointer;
+
+            @include xs {
+                top: 20px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
+            }
+
+            @include sm {
+                top: 20px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+            }
+
+            @include md {
+                top: 20px;
+                right: 6px;
+                width: 55px;
+                height: 55px;
+            }
+    
+            &:hover {
+                background-color: $main-color;
+    
+                .svg-inline--fa {color: $white-color;}
+            }
+    
+            .svg-inline--fa {
+                position: fixed;
+                top: 55px;
+                right: 57px;
+                font-size: 40px;
+                color: $secondary-color;
+                text-decoration: none;
+                cursor: pointer;
+
+                @include xs {
+                    top: 29px;
+                    right: 18px;
+                    width: 33px;
+                    height: 33px;
+                }
+
+                @include sm {
+                    top: 29px;
+                    right: 23px;
+                    width: 38px;
+                    height: 38px;
+                }
+
+                @include md {
+                    top: 29px;
+                    right: 15px;
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
+    
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: $secondary-color;
+            opacity: .8;
+            z-index: 9997;
+            transition: .5s;
+    
+            &.active {
+                left: 0;
+                overflow: auto;
+            }
+        
+            ul {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin: 0;
+                padding: 0;
+                text-align: center;
+        
+                li {
+                    list-style-type: none;
+            
+                    a {
+                        display: inline-block;
+                        padding: 10px;
+                        font-family: verdana, sans-serif;
+                        font-size: 35px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $white-color;
+                        transition: all .5s ease-in-out;
+
+                        @include xs {font-size: 20px;}
+                        @include sm {font-size: 25px;}
+                        @include md {font-size: 30px;}
+            
+                        &:hover {
+                            color: $main-color;
+                            border-bottom: 2px solid $main-color;
+                            font-weight: 700;
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    
+        .navbar-brand {
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            z-index: 2;
+            cursor: pointer;
+
+            @include xs {
+                top: 17px;
+                left: 10px;
+            }
+
+            @include sm {
+                top: 17px;
+                left: 15px;
+            }
+
+            @include md {
+                top: 17px;
+                left: 20px;
+            }
+    
+            img {
+                width: 80%;
+
+                @include xs {width: 50%;}
+                @include sm {width: 60%;}
+                @include md {width: 70%;}
+            }
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            color: $white-color;
+        
+            h1 {
+                font-size: 70px;
+                font-weight: 700;
+                letter-spacing: .2rem;
+                text-shadow: .3rem .3rem .9rem $black-color;
+                padding-bottom: 1rem;
+                text-transform: uppercase;
+                text-align: left;
+                font-family: Verdana, sans-serif;
+
+                @include xs {
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                @include sm {
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                @include md {font-size: 49px;}
+                @include lg {font-size: 67px;}
+            }
+        
+            h3 {
+                font-size: 35px;
+                font-weight: 600;
+                text-shadow: .3rem .3rem .9rem $black-color;
+                padding-bottom: 1.6rem;
+                text-transform: uppercase;
+                text-align: left;
+                font-family: Verdana, sans-serif;
+
+                @include xs {
+                    font-size: 11px;
+                    text-align: center;
+                }
+
+                @include sm {
+                    font-size: 11px;
+                    text-align: center;
+                }
+
+                @include md {font-size: 19px;}
+                @include lg {font-size: 26px;}
+                @include xl {font-size: 30px;}
+            }
+        
+            .type {
+                font-size: 30px;
+                text-shadow: .3rem .3rem .9rem $black-color;
+                text-align: left;
+                font-family: Verdana, sans-serif;
+
+                @include xs {
+                    font-size: 13px;
+                    text-align: center;
+                }
+
+                @include sm {
+                    font-size: 13px;
+                    text-align: center;
+                }
+
+                @include md {font-size: 19px;}
+                @include lg {font-size: 24px;}
+                @include xl {font-size: 28px;}
+            }
+        
+            .typed-cursor {font-size: 0;}
+
+            .btn {
+                position: absolute;
+                top: 60%;
+                left: 0%;
+                cursor: pointer;
+            
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                    background-color: $main-color;
+                    border: 1px solid $third-color;
+            
+                    a {
+                        text-decoration: none;
+                        text-shadow: none;
+                        border-bottom: none;
+                        color: $third-color;
+                    }
+                }
+            
+                a {
+                    font-size: 30px;
+                    color: $white-color;
+                    border-bottom: 2px solid $white-color;
+                    text-shadow: .3rem .3rem .9rem $black-color;
+
+                    @include xs {font-size: 16px;}
+                    @include sm {font-size: 16px;}
+                    @include md {font-size: 19px;}
+                    @include lg {font-size: 24px;}
+                    @include xl {font-size: 28px;}
+                }
+            }
+        }
+        
+        .carousel-inner {
+            .carousel-item {
+
+                img {
+                    height: 100vh;
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}

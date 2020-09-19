@@ -1,0 +1,45 @@
+footer {
+    border-top: 2px solid $secondary-color;
+    margin-top: 100px;
+
+    #go-top {
+        font-size: 50px;
+        margin-top: -61px;
+    
+        .svg-inline--fa {
+            color: $white-color;
+
+            &:hover {color: $main-color;}
+        }
+    }
+
+    h4 {
+        color: $white-color;
+        font-weight: 700;
+
+        @include xs {
+            margin: 0px;
+            font-size: 19px;
+        }
+
+        @include sm {
+            margin: 0px;
+            font-size: 19px;
+        }
+        
+        @include md {
+            margin: 0px;
+            font-size: 25px;
+        }
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

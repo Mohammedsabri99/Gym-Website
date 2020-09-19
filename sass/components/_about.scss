@@ -1,0 +1,139 @@
+#about {
+    margin-bottom: 180px;
+
+    @include xs {margin-bottom: 50px;}
+    @include sm {margin-bottom: 60px;}
+    @include md {margin-bottom: 70px;}
+    @include lg {margin-bottom: 80px;}
+
+    .container {
+
+        .paragraph {
+            margin-bottom: 40px;
+
+            @include xs {margin-bottom: 25px;}
+            @include sm {margin-bottom: 30px;}
+            @include md {margin-bottom: 35px;}
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                color: $white-color;
+                font-size: 48px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+
+                @include xs {font-size: 25px;}
+                @include sm {font-size: 30px;}
+                @include md {font-size: 35px;}
+            }
+        
+            p {
+                margin: 20px 0 0 ;
+                padding-left: 20px;
+                color: $white-color;
+                text-align: justify;
+                border-left: 5px solid #f00;
+
+                @include xs {font-size: 10px;}
+                @include sm {font-size: 15px;}
+                @include md {font-size: 20px;}
+            }
+        }
+
+        .box {
+            margin: 0 20px;
+            padding: 0px;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            cursor: pointer;
+
+            @include xs {
+                margin: 10px 10px;
+            }
+
+            @include sm {margin: 15px 10px;}
+            @include md {margin: 20px 10px;}
+            @include lg {margin: 25px 10px;}
+    
+            &:hover {
+                h3:before {
+                    transform: skewY(50deg);
+                    background-color: $third-color;
+                }
+    
+                h3:after {
+                    transform: skewY(50deg);
+                    background-color: $third-color;
+                }
+
+                h3 {
+                    background-color: $third-color;
+                    color: $main-color;
+                }
+            }
+    
+            h3 {
+                margin: 50px -30px 20px 0px;
+                padding: 15px 0;
+                position: relative;
+                left: -15px;
+                color: $white-color;
+                background-color: $main-color;
+                font-size: 36px;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+                @include xs {font-size: 20px;}
+                @include sm {font-size: 25px;}
+                @include md {font-size: 30px;}
+                
+                &:hover {
+                    background-color: $third-color;
+                    color: $main-color;
+                }
+    
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 15px;
+                    height: 100%;
+                    background: #c0392b;
+                    transform-origin: top left;
+                    transform: skewY(-50deg);
+                    transition: transform .5s;
+                    z-index: -1;
+                }
+    
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 15px;
+                    height: 100%;
+                    background: #c0392b;
+                    transform-origin: top right;
+                    transform: skewY(-50deg);
+                    transition: transform .5s;
+                    z-index: -1;
+                }
+            }
+    
+            p {
+                padding: 0 20px;
+                color: $white-color;
+                font-size: 16px;
+                text-align: justify;
+
+                @include xs {font-size: 10px;}
+                @include sm {font-size: 15px;}
+                @include md {font-size: 20px;}
+            }
+        }
+    }
+}

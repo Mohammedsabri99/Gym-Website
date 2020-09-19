@@ -1,0 +1,208 @@
+#team {
+  margin-bottom: 180px;
+
+  @include xs {margin-bottom: 50px;}
+  @include sm {margin-bottom: 60px;}
+  @include md {margin-bottom: 70px;}
+  @include lg {margin-bottom: 80px;}
+
+  .container {
+
+    .paragraph {
+        margin-bottom: 40px;
+
+        @include xs {margin-bottom: 25px;}
+        @include sm {margin-bottom: 30px;}
+        @include md {margin-bottom: 35px;}
+
+        h1 {
+          margin: 0;
+          padding: 0;
+          color: $white-color;
+          font-size: 48px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: center;
+
+          @include xs {font-size: 25px;}
+          @include sm {font-size: 30px;}
+          @include md {font-size: 35px;}
+        }
+    
+        p {
+          margin: 20px 0 0 ;
+          padding-left: 20px;
+          color: $white-color;
+          text-align: justify;
+          border-left: 5px solid $main-color;
+
+          @include xs {font-size: 10px;}
+          @include sm {font-size: 15px;}
+          @include md {font-size: 20px;}
+        }
+    }
+
+    .box {
+      margin: 0 10px;
+      padding: 0px;
+      min-height: 250px;
+      background-color: $white-color;
+      cursor: pointer;
+      overflow: hidden;
+
+      @include xs {margin: 10px 10px;}
+      @include sm {margin: 15px 10px;}
+      @include md {margin: 20px 10px;}
+      @include lg {margin: 25px 10px;}
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($main-color, 1);
+        z-index: 1;
+        transition: .5s;
+        mix-blend-mode: soft-light;
+      }
+
+      &:hover {
+
+        &:before {bottom: 0;}
+        .imgBox img {transform: scale(1.5);}
+        .details {bottom: 0px;}
+      }
+
+      .imgBox {
+        img {
+          width: 100%;
+          transition: 5s;
+        }
+      }
+
+      .details {
+        position: absolute;
+        bottom: -158px;
+        left: 0;
+        padding: 10px;
+        background-color: rgba($black-color, .9);
+        width: 100%;
+        transition: .5s;
+        z-index: 2;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          color: $white-color;
+          font-weight: 500;
+          text-align: center;
+          text-transform: uppercase;
+
+          span {
+            position: relative;
+            top: -6px;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $main-color;
+          }
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          
+          li {
+            list-style-type: none;
+
+            a {
+              padding: 0px 10px;
+              color: $white-color;
+
+              .svg-inline--fa {transition: .5s;}
+
+              &:hover .svg-inline--fa.fa-w-9 {
+                transform: rotateY(360deg);
+                color: rgb(66, 103, 178);
+              }
+    
+              &:hover .svg-inline--fa.fa-w-16 {
+                transform: rotateY(360deg);
+                color: rgb(29, 161, 242);
+              }
+
+              &:hover .svg-inline--fa.fa-w-18 {
+                transform: rotateY(360deg);
+                color: rgb(255, 0, 0);
+              }
+
+              &:hover .svg-inline--fa.fa-w-20 {
+                transform: rotateY(360deg);
+                color: rgb(255, 102, 0);
+              }
+    
+              &:hover .svg-inline--fa.fa-w-14 {
+                transform: rotateY(360deg);
+                color: rgb(251, 255, 0);
+              }
+            }
+          }
+        }
+
+        .rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 10px;
+
+          input {
+            display: none;
+
+            &:checked ~ label:after {opacity: 1;}
+          }
+
+          label {
+            display: block;
+            cursor: pointer;
+
+            &:hover:after,
+            &:hover ~ label:after {
+              opacity: 1;
+            }
+
+            &:before {
+              content: '\f005';
+              font-family: fontAwesome;
+              position: relative;
+              display: block;
+              font-size: 20px;
+              color: $secondary-color;
+            }
+
+            &:after {
+              content: '\f005';
+              font-family: fontAwesome;
+              position: absolute;
+              display: block;
+              top: 110px;
+              font-size: 20px;
+              color: $third-color;
+              opacity: 0;
+              transition: .5s;
+              text-shadow: 0 2px 5px rgba($black-color,.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

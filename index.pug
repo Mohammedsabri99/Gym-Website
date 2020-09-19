@@ -1,0 +1,508 @@
+doctype html
+|
+|
+html(lang="en")
+    |
+    |
+    head
+        |
+        |
+        // Basic Page Needs
+        meta(charset="utf-8")
+        title THE GYM WEBSITE
+        meta(name="description" content="THE GYM WEBSITE")
+        meta(name="keywords" content="")
+        meta(name="author" content="Mohammed Sabri")
+        |
+        |
+        // Mobile Specific Metas
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        |
+        |
+        // Fixed
+        link(rel="stylesheet" href="css/vendor/fixed/fixed.css")
+        |
+        |
+        // Normalize
+        link(rel="stylesheet" href="css/vendor/normalize/normalize.min.css")
+        |
+        |
+        // Wow JS
+        link(rel="stylesheet" href="css/vendor/wow.js/animate.css")
+        |
+        |
+        // Swiper
+        link(rel="stylesheet" href="css/vendor/swiper/swiper.min.css")
+        |
+        |
+        // FontAwesome
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        |
+        |
+        // Bootstrap
+        link(rel="stylesheet" href="css/vendor/bootstrap/bootstrap.min.css")
+        |
+        |
+        // CSS Stylesheet
+        link(rel="stylesheet" href="css/output.css")
+        |
+        |
+        // Favicons
+        link(rel="shortcut icon" href="favicon/favicon-me.ico")
+        |
+        |
+    body(data-spy="scroll" data-target="#navbarResponsive" id="top")
+        |
+        |
+        // Preloader
+        #preloader
+            .loading
+                .obj
+                .obj
+                .obj
+                .obj
+                .obj
+                .obj
+                .obj
+                .obj
+        // Start Header Part
+        |
+        |
+        // Start Home Section
+        #home
+            
+            |
+            |
+            // Start Carousel Section
+            .bd-example
+                div(id="carouselExampleCaptions" class="carousel slide" data-ride="carousel")
+
+                    // Start Navigation Section
+                    .toggle
+                        a
+                            i(class="fas fa-bars" aria-hidden="true")
+                    .menu
+                        ul
+                            li
+                                a(href="#home") Home
+                            li
+                                a(href="#about") About
+                            li
+                                a(href="#services") Services
+                            li
+                                a(href="#team") Team
+                            li
+                                a(href="#testimonials") Testimonials
+                            li
+                                a(href="#contact") Contact
+                    a(href="#" class="navbar-brand" class="wow bounceIn")
+                        img(src="img/MS Design(grey-white).png")
+                    // End Navigation Section
+                    
+                    ol(class="carousel-indicators")
+                        li(data-target="#carouselExampleCaptions" data-slide-to="0" class="active")
+                        li(data-target="#carouselExampleCaptions" data-slide-to="1")
+                        li(data-target="#carouselExampleCaptions" data-slide-to="2")
+                        li(data-target="#carouselExampleCaptions" data-slide-to="3")
+
+                    .carousel-caption
+                        h1.wow.bounceIn Legends Gym
+                        h3.wow.bounceIn The place where we make legends
+                        h4.type.wow.bounceIn
+                        button(type="button" class="btn btn-link" class="wow bounceIn")
+                            a(href="#about") Let's Go
+                
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="img/bars.jpg" class="d-block w-100" alt="")
+                        .carousel-item
+                            img(src="img/athletes.jpg" class="d-block w-100" alt="")
+                        .carousel-item
+                            img(src="img/energy-gym.jpg" class="d-block w-100" alt="")
+                        .carousel-item
+                            img(src="img/boxer.jpg" class="d-block w-100" alt="")
+            // End Carousel Section
+        |
+        |
+        // End Home Section
+        |
+        |
+        // End Header Part
+        |
+        |
+        // Start Main Part
+        |
+        |
+        // Start About Section
+    
+        #about
+            .container
+                .row
+                    .paragraph.col-xs-12.wow.bounceIn
+                        h1.wow.bounceIn About us
+                        p.wow.bounceIn Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo!
+
+                .row.justify-content-between.text-center
+                    .box.col-lg.wow.bounceIn
+                        h3 Our Story
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor nulla illo, accusantium tenetur saepe. Error, aliquam voluptatibus neque assumenda natus alias in exercitationem maiores tempora aut at sunt commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusamus tempora nulla quaerat ratione, odit voluptatem minima saepe placeat delectus voluptate iure aliquid voluptas, sed, modi error ut culpa. Ducimus?
+                        
+                    .box.col-lg.wow.bounceIn
+                        h3 achievements
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor nulla illo, accusantium tenetur saepe. Error, aliquam voluptatibus neque assumenda natus alias in exercitationem maiores tempora aut at sunt commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusamus tempora nulla quaerat ratione, odit voluptatem minima saepe placeat delectus voluptate iure aliquid voluptas, sed, modi error ut culpa. Ducimus?
+
+                    .box.col-lg.wow.bounceIn
+                        h3 Awards
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolor nulla illo, accusantium tenetur saepe. Error, aliquam voluptatibus neque assumenda natus alias in exercitationem maiores tempora aut at sunt commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusamus tempora nulla quaerat ratione, odit voluptatem minima saepe placeat delectus voluptate iure aliquid voluptas, sed, modi error ut culpa. Ducimus?
+        // End About Section
+        |
+        |
+        // Start Services Section
+        #services
+            .container
+                .row
+                    .paragraph.col-xs-12.wow.bounceIn
+                        h1.wow.bounceIn Our Service
+                        p.wow.bounceIn Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo!
+
+                .row.justify-content-between.text-center
+                    .box.col-lg.wow.bounceIn
+                        .img.wow.bounceIn
+                            img(src="img/casual.jpg")
+                        .content.wow.bounceIn
+                            h3 Service Name
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quisquam tempore at facilis impedit debitis sed facere blanditiis fugit corporis accusamus, dolorum soluta distinctio? Vel doloribus debitis esse eligendi dolor?
+                            a(href="#") Read More
+                    
+                    .box.col-lg.wow.bounceIn
+                        .img.wow.bounceIn
+                            img(src="img/fitness.jpg")
+                        .content.wow.bounceIn
+                            h3 Service Name
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quisquam tempore at facilis impedit debitis sed facere blanditiis fugit corporis accusamus, dolorum soluta distinctio? Vel doloribus debitis esse eligendi dolor?
+                            a(href="#") Read More
+                    
+                    .box.col-lg.wow.bounceIn
+                        .img.wow.bounceIn
+                            img(src="img/barbell.jpg")
+                        .content.wow.bounceIn
+                            h3 Service Name
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quisquam tempore at facilis impedit debitis sed facere blanditiis fugit corporis accusamus, dolorum soluta distinctio? Vel doloribus debitis esse eligendi dolor?
+                            a(href="#") Read More
+        // End Services Section
+        |
+        |
+        // Start Team Section
+        #team
+            .container
+                .row
+                    .paragraph.col-xs-12.wow.bounceIn
+                        h1.wow.bounceIn Our Team
+                        p.wow.bounceIn Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id iure distinctio natus eligendi placeat, reprehenderit, suscipit quisquam quis optio itaque consequatur deleniti ducimus, officiis culpa sapiente praesentium facilis quo!
+
+                .row.justify-content-between
+                    .box.col-lg.col-md-5.col-sm-5.wow.bounceIn
+                        .imgBox
+                            img(src="img/jhon.jpg")
+                        .details
+                            h3 Jhon Dee <br>
+                                span Bodybuilder
+                            ul
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-facebook-f")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-youtube")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-google-plus-g")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-instagram")
+                            .rating
+                                input(type="radio" name="star" id="star1")
+                                label(for="star1")
+
+                                input(type="radio" name="star" id="star2")
+                                label(for="star2")
+
+                                input(type="radio" name="star" id="star3")
+                                label(for="star3")
+
+                                input(type="radio" name="star" id="star4")
+                                label(for="star4")
+
+                                input(type="radio" name="star" id="star5")
+                                label(for="star5")
+
+                    .box.col-lg.col-md-5.col-sm-5.wow.bounceIn
+                        .imgBox
+                            img(src="img/adult-athlete.jpg")
+                        .details
+                            h3 Antoni King <br>
+                                span Bodybuilder
+                            ul
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-facebook-f")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-youtube")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-google-plus-g")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-instagram")
+                            .rating
+                                input(type="radio" name="star" id="star1")
+                                label(for="star1")
+
+                                input(type="radio" name="star" id="star2")
+                                label(for="star2")
+
+                                input(type="radio" name="star" id="star3")
+                                label(for="star3")
+
+                                input(type="radio" name="star" id="star4")
+                                label(for="star4")
+
+                                input(type="radio" name="star" id="star5")
+                                label(for="star5")
+
+                    .box.col-lg.col-md-5.col-sm-5.wow.bounceIn
+                        .imgBox
+                            img(src="img/active-adult-biceps.jpg")
+                        .details
+                            h3 Sophia Alvarez <br>
+                                span Fitness Coach
+                            ul
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-facebook-f")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-youtube")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-google-plus-g")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-instagram")
+                            .rating
+                                input(type="radio" name="star" id="star1")
+                                label(for="star1")
+
+                                input(type="radio" name="star" id="star2")
+                                label(for="star2")
+
+                                input(type="radio" name="star" id="star3")
+                                label(for="star3")
+
+                                input(type="radio" name="star" id="star4")
+                                label(for="star4")
+
+                                input(type="radio" name="star" id="star5")
+                                label(for="star5")
+
+                    .box.col-lg.col-md-5.col-sm-5.wow.bounceIn
+                        .imgBox
+                            img(src="img/abs-biceps.jpg")
+                        .details
+                            h3 Nino James <br>
+                                span Fitness Coach
+                            ul
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-facebook-f")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-youtube")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-google-plus-g")
+                                li
+                                    a(href="#")
+                                        i(class="fab fa-instagram")
+                            .rating
+                                input(type="radio" name="star" id="star1")
+                                label(for="star1")
+
+                                input(type="radio" name="star" id="star2")
+                                label(for="star2")
+
+                                input(type="radio" name="star" id="star3")
+                                label(for="star3")
+
+                                input(type="radio" name="star" id="star4")
+                                label(for="star4")
+
+                                input(type="radio" name="star" id="star5")
+                                label(for="star5")
+        |
+        |
+        // Start Testimonials Section
+        #testimonials
+            .container
+                .row
+                    .swiper-container.wow.bounceIn
+                        .swiper-wrapper
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/arnowld.png")
+                                .details
+                                    h3 Arnold Schwarzenegger
+                                    h4 1947 - present
+                                    p “Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/rock.jpg")
+                                .details
+                                    h3 Dwayne Johnson <br> "The Rock"
+                                    h4 1972 - present
+                                    p “Success isn’t always about ‘Greatness’, it’s about consistency. Consistent, hard work gains success. Greatness will come”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/heath.jpg")
+                                .details
+                                    h3 Phil Heath
+                                    h4 1979 - present
+                                    p “Being negative and lazy is a disease that leads to pain, hardship, depression, poor health and failure. Be pro-active, and give a damn to achieve success”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/jr.jpg")
+                                .details
+                                    h3 Ulisses Jr
+                                    h4 1976 - present
+                                    p “To be the best, you must be able to handle the worst.”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/ronney.jpg")
+                                .details
+                                    h3 Ronnie Coleman
+                                    h4 1964 - present
+                                    p “Hard work and training. There's no secret formula. I lift heavy, work hard and aim to be the best”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/kay.jpg")
+                                .details
+                                    h3 Kai Greene
+                                    h4 1975 - present
+                                    p “Do not let yourself be contaminated by others' ideas of what is best for you. Cast aside the shackles of destructive thinking”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/dex.jpg")
+                                .details
+                                    h3 Dexter Jackson
+                                    h4 1969 - present
+                                    p “There isn’t enough emphasis on the heavy barbell basics anymore, especially in the early years when guys need them the most”
+                            .swiper-slide.col-xs-12
+                                .imgBx
+                                    img(src="img/lazar.jpg")
+                                .details
+                                    h3 Lazar Angelov
+                                    h4 1984 - present
+                                    p “No matter how you feel, get up, dress up, show up, and never give up”
+
+                        .swiper-pagination.col-xs-12
+        // End Testimonials Section
+        |
+        |
+        // End Main Part
+        |
+        |
+        // Start Footer Part
+        |
+        |
+        // Start Contact Section
+        #contact
+            .container
+                .row.text-center.wow.bounceIn
+                    .box.col-lg.wow.bounceIn
+                        .icon
+                            i(class="fas fa-map-marker-alt")
+                            h4 Address
+                            h3 Texas, 5933761, United States
+
+                    .box.col-lg.wow.bounceIn
+                        .icon
+                            i(class="fas fa-phone")
+                            h4 Mobile
+                            h3 (+201) 888 888 888
+
+                    .box.col-lg.wow.bounceIn
+                        .icon
+                            i(class="far fa-envelope")
+                            h4 Email
+                            h3 info@loremipsum.com
+        // End Contact Section
+        |
+        |
+        // Start Contact Section
+        footer
+            .container
+
+                .row.justify-content-center
+                    .col-xs-12.wow.bounceIn
+                        #go-top
+                            a(class="gototop" href="#top")
+                                i(class="fas fa-chevron-circle-up")
+
+                .row.justify-content-center
+                    .col-xs-12.wow.bounceIn
+                            h4 C.V &copy; Copyright 2019
+                    .col-xs-12.wow.bounceIn
+                            h4 Designed by
+                                a(href="file:///C:/Users/Mohammed%20Sabri/Desktop/C.V%20website/C.V.html" title="styleshout" target="_blank")  Mohammed Sabri
+        // End Contact Section
+        |
+        |
+        // End Footer Part
+        |
+        |
+        // Start JS Stylesheet
+        |
+        |
+        // jQuery CDN
+        script(src="js/vendor/jquery/jquery-3.3.1.js")
+        |
+        |
+        // Bootstrap
+        script(src="js/vendor/bootstrap/bootstrap.min.js")
+        |
+        |
+        // Typed Js
+        script(src="js/vendor/typed/typed.js")
+        |
+        |
+        // Wow JS
+        script(src="js/vendor/wow.js/wow.min.js")
+        |
+        |
+        // Swiper
+        script(src="js/vendor/swiper/swiper.min.js")
+        |
+        |
+        // Font-Awesome
+        script(src="js/vendor/fontawesome/all.min.js")
+        |
+        |
+        // Main JS
+        script(src="js/main.js")
+        |
+        |
+        // End JS Stylesheet

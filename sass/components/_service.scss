@@ -1,0 +1,157 @@
+#services {
+    margin-bottom: 180px;
+
+    @include xs {margin-bottom: 50px;}
+    @include sm {margin-bottom: 60px;}
+    @include md {margin-bottom: 70px;}
+    @include lg {margin-bottom: 80px;}
+
+    .container {
+
+        .paragraph {
+            margin-bottom: 40px;
+
+            @include xs {margin-bottom: 25px;}
+            @include sm {margin-bottom: 30px;}
+            @include md {margin-bottom: 35px;}
+
+            h1 {
+                color: $white-color;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+                font-size: 48px;
+                text-transform: uppercase;
+
+                @include xs {font-size: 25px;}
+                @include sm {font-size: 30px;}
+                @include md {font-size: 35px;}
+            }
+        
+            p {
+                margin: 20px 0 0 ;
+                padding-left: 20px;
+                color: $white-color;
+                text-align: justify;
+                border-left: 5px solid #f00;
+
+                @include xs {font-size: 10px;}
+                @include sm {font-size: 15px;}
+                @include md {font-size: 20px;}
+            }
+        }
+
+        .box {
+            margin: 0px 20px;
+            padding: 20px;
+            background: $secondary-color;
+            color: $white-color;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            border-radius: 4px;
+            transition: all .5s ease-in-out;
+
+            @include xs {margin: 10px 10px;}
+            @include sm {margin: 15px 10px;}
+            @include md {margin: 20px 10px;}
+            @include lg {margin: 25px 10px;}
+
+            &:hover {
+                background: $main-color;
+                color: $third-color;
+                transform: scale(1.1);
+                cursor: pointer;
+
+                .img {
+                    img {border: 2px solid $third-color;}
+                }
+
+                .content {
+                    a {
+                        background: $third-color;
+                        color: $main-color;
+                        font-weight: 700;
+                        border: 1px solid $white-color;
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    border: 2px solid $white-color;
+
+                    @include xs {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    @include sm {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    @include md {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+
+            .content {
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin: 10px 0;
+                    padding: 0;
+
+                    @include xs {font-size: 20px;}
+                    @include sm {font-size: 25px;}
+                    @include md {font-size: 30px;}
+                }
+
+                p {
+                    font-size: 15px;
+
+                    @include xs {font-size: 10px;}
+                    @include sm {font-size: 15px;}
+                    @include md {font-size: 20px;}
+                }
+
+                a {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background: $white-color;
+                    color: $black-color;
+                    border: 1px solid $black-color;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+                    @include xs {
+                        margin-top: 0px;
+                        padding: 5px 10px;
+                        font-size: 10px;
+                    }
+
+                    @include sm {
+                        margin-top: 0px;
+                        padding: 10px 15px;
+                        font-size: 15px;
+                    }
+
+                    @include md {
+                        margin-top: 0px;
+                        padding: 15px 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

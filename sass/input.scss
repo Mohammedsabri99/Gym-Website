@@ -1,0 +1,22 @@
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+// Base
+@import "base/fonts";
+@import "base/animation";
+
+// Components
+@import "components/home";
+@import "components/team";
+@import "components/service";
+@import "components/contact";
+@import "components/testimonials";
+@import "components/about";
+
+// Layout
+@import "layout/footer";
+@import "layout/preloader";
+
+// Pages
+@import "pages/home";
